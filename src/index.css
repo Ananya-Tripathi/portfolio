@@ -23,7 +23,7 @@ code {
 }
 .name {
   font-family: "Rubik Distressed", cursive;
-  @apply text-5xl text-white h-16 mt-[-10px] w-[200px];
+  @apply text-5xl text-white h-16 w-[200px];
 }
 .about {
   font-family: "Lato", sans-serif;
@@ -38,4 +38,8 @@ code {
 }
 .icon {
   @apply py-1 text-2xl;
+}
+.education {
+  font-family: "Lato", sans-serif;
+  @apply border-2 border-white rounded-md w-[400px] max-h-[700px] md:max-h-[400px] mx-auto md:w-[700px] text-white mt-20 md:ml-44 p-8;
 }
