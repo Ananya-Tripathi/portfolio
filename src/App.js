@@ -1,22 +1,23 @@
 import { NavBar } from "./Component/NavBar";
 import { Footer } from "./Component/Footer";
-import { About } from "./Component/About";
-import { Contact } from "./Component/Contact";
-import { Education } from "./Component/Education/Education";
-// import { Home } from "./Routes/Home";
-// import { Contact } from "./Routes/Contact";
-// import { Routes, Route } from "react-router-dom";
+import { Home } from "./Routes/Home";
+import { ContactPage } from "./Routes/ContactPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { EducationPage } from "./Routes/EducationPage";
 function App() {
   return (
-    <main>
-      <div className="bg-gradient-to-br from-slate-900 via-violet-700 to-violet-600 min-h-screen">
+    <div className="bg-gradient-to-br from-slate-900 via-violet-700 to-violet-600 min-h-screen">
+      <BrowserRouter>
         <NavBar />
-        {/* <About /> */}
-        {/* <Contact /> */}
-        <Education />
-        <Footer />
-      </div>
-    </main>
+        <Routes>
+          <Route path="/portfolio/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/education" element={<EducationPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </div>
   );
 }
 

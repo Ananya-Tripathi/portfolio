@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import { Link } from "react-router-dom";
 export const NavBar = () => {
   const [menu, setMenu] = useState(true);
 
@@ -17,13 +18,17 @@ export const NavBar = () => {
         </button>
       </div>
 
-      {menu && (
-        <div className="flex md:mr-[100px]">
+      <div className="flex md:mr-[100px]">
+        <Link to={"/home"}>
           <p className="routeText">Home</p>
+        </Link>
+        <Link to={"/education"}>
           <p className="routeText ">Education</p>
+        </Link>
+        <Link to={"/contact"}>
           <p className="routeText ">Contact Me</p>
-        </div>
-      )}
+        </Link>
+      </div>
     </div>
   );
 };
