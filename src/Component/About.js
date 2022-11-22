@@ -1,7 +1,7 @@
 import React from "react";
 export const About = () => {
   return (
-    <div className="min-h-screen flex md:ml-44 ml-10">
+    <div className="min-h-screen flex md:ml-44 md:justify-start justify-center ">
       <div className="about ">
         <p className="aboutHeading">
           I am Ananya Tripathi, welcome to my profile...
@@ -12,7 +12,11 @@ export const About = () => {
         </p>
       </div>
       {/* <div>
-        <img alt="avatar" src="avatar.png" />
+        <img
+          className="h-40 w-20"
+          alt="avatar"
+          src="src\Component\avatar.png"
+        />
       </div> */}
     </div>
   );
