@@ -27,7 +27,7 @@ code {
 }
 .about {
   font-family: "Lato", sans-serif;
-  @apply h-[400px] w-[600px] text-white mt-20 ml-44 p-8;
+  @apply h-[400px] w-[600px] text-white mt-20 p-8;
 }
 .aboutHeading {
   font-family: "Merriweather", serif;

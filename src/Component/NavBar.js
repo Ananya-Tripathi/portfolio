@@ -18,7 +18,7 @@ export const NavBar = () => {
         </button>
       </div>
 
-      <div className="flex md:mr-[100px]">
+      <div className="md:flex md:mr-[100px]">
         <Link to={"/home"}>
           <p className="routeText">Home</p>
         </Link>

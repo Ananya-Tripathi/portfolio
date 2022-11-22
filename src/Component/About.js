@@ -1,8 +1,8 @@
 import React from "react";
 export const About = () => {
   return (
-    <div className="min-h-screen flex">
-      <div className="about">
+    <div className="min-h-screen flex md:ml-44 ml-10">
+      <div className="about ">
         <p className="aboutHeading">
           I am Ananya Tripathi, welcome to my profile...
         </p>
