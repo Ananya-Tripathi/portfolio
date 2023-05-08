@@ -1,22 +1,38 @@
-import { NavBar } from "./Component/NavBar";
 import { Footer } from "./Component/Footer";
-import { Home } from "./Routes/Home";
-import { ContactPage } from "./Routes/ContactPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { EducationPage } from "./Routes/EducationPage";
+import { About } from "./Component/About";
+import { Contact } from "./Component/Contact";
+// import { useState } from "react";
+// import { PropagateLoader } from "react-spinners";
+import Experience from "./Component/Experience";
+import Projects from "./Component/Projects";
+import Certifications from "./Component/Certifications";
 function App() {
+  // const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   setLoading(false);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //     console.log(loading);
+  //   }, 4000);
+  // }, []);
   return (
-    <div className="bg-gradient-to-br from-slate-900 via-violet-700 to-violet-600 min-h-screen">
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/portfolio/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/education" element={<EducationPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+    <div>
+      {/* {loading ? (
+        <PropagateLoader
+          color="white"
+          size={20}
+          className="text-center mt-80 min-h-screen ease-out"
+        />
+      ) : ( */}
+      <div className="ease-in h-screen overflow-y-scroll">
+        <About />
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Contact />
+        <Footer />
+      </div>
+      {/* )} */}
     </div>
   );
 }

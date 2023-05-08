@@ -2,8 +2,8 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="h-10 text-center text-white">
-      Copyright @{new Date().getFullYear()}
+    <div className="subText text-base;">
+      <p className="pb-4 transition ">ananya @{new Date().getFullYear()}</p>
     </div>
   );
 };
