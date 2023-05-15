@@ -23,11 +23,8 @@ const Projects = () => {
         >
           <Info
             src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea aliquid vero sed cum eligendi laboriosam provident recusandae animi eaque?"
-          />
-          <Info
-            src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ea aliquid vero sed cum eligendi laboriosam provident recusandae animi eaque?"
+            heading="WeBlog (React, Node.js, Express, MongoDB, Javascript, HTML5, CSS)"
+            description="A recipe blogging website, with integrated user-authentication,user can create and edit post from their id."
           />
         </motion.div>
       )}

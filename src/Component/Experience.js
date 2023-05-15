@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InfoLeft from "./Info";
+import Info from "./Info";
 import { motion } from "framer-motion";
 const Experience = () => {
   const [open, setOpen] = useState(false);
@@ -19,8 +19,9 @@ const Experience = () => {
           transition={{ duration: 0.4 }}
           className="relative top-0"
         >
-          <InfoLeft
+          <Info
             src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
+            heading="Front-End Developer, Green Enterprises"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil et quas molestiae voluptatem blanditiis est quisquam. Esse, saepe sit."
           />
         </motion.div>

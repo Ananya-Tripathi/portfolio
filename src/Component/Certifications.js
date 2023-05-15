@@ -1,6 +1,39 @@
 import useEmblaCarousel from "embla-carousel-react";
 import React, { useState, useCallback } from "react";
+import image1 from "../images/image-1.jpeg";
+import image2 from "../images/image-2.png";
+import image3 from "../images/image-3.png";
+import image4 from "../images/image-4.png";
+import image5 from "../images/image-5.png";
 const Certifications = () => {
+  const images = [
+    {
+      id: 1,
+      src: image1,
+      alt: "image1",
+    },
+    {
+      id: 2,
+      src: image2,
+      alt: "image2",
+    },
+    {
+      id: 3,
+      src: image3,
+      alt: "image3",
+    },
+    {
+      id: 4,
+      src: image4,
+      alt: "image4",
+    },
+    {
+      id: 5,
+      src: image5,
+      alt: "image5",
+    },
+  ];
+
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -21,10 +54,18 @@ const Certifications = () => {
         {open && (
           <div className="w-[500px] mx-auto overflow-hidden ">
             <div ref={emblaRef}>
-              <div className="flex">
-                <div className="emSlide">Slide 1</div>
-                <div className="emSlide">Slide 2</div>
-                <div className="emSlide">Slide 3</div>
+              <div className="flex ">
+                {images.map((image) => {
+                  return (
+                    <div className="emSlide">
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        className="object-cover h-64 w-86 rounded-md"
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <button className="embla__prev" onClick={scrollPrev}>

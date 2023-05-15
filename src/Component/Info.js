@@ -10,9 +10,10 @@ const Info = (props) => {
           className="mx-auto h-32 p-4 bg-slate-100 rounded-md "
         />
       </div>
-      <p className="md:text-left px-4 py-2 w-3/4 mx-auto">
-        {props.description}
-      </p>
+      <div className="md:text-left px-4 py-2 w-3/4 mx-auto">
+      <p className="font-semibold ">{props.heading}</p>
+        <p>{props.description}</p>
+      </div>
     </div>
   );
 };
