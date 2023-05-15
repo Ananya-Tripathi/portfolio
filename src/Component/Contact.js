@@ -5,7 +5,7 @@ import { SiGmail, SiGithub } from "react-icons/si";
 
 export const Contact = () => {
   return (
-    <div className="subText mx-auto  p-10 mt-32">
+    <div className="subText mx-auto  pt-10 mt-32">
       <h1 className="subHeading">Let's Connect</h1>
       <div className="text-xl h-20 flex space-x-4 justify-center p-4">
         <a href="mailto:ananyatrip0802@gmail.com">

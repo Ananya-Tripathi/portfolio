@@ -36,42 +36,11 @@ a {
 
 .subText {
   font-family: "Sono", sans-serif;
-  @apply text-center ;
+  @apply text-center;
 }
 .subHeading {
-  @apply text-2xl pt-6 w-[200px] mx-auto border-b-2 pb-2 mb-4 font-bold;
+  @apply text-xl pt-6 w-[200px] mx-auto border-b-2 pb-2 mb-4 font-bold;
 }
-
-.embla {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.embla__viewport {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: fit-content;
-}
-
-.embla__slide {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 0 0 100%;
-  height: 400px;
-  transition: opacity 0.3s ease;
-  opacity: 1;
+.emSlide {
+  @apply flex-[0_0_80%];
 }

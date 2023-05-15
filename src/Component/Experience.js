@@ -20,7 +20,7 @@ const Experience = () => {
           className="relative top-0"
         >
           <InfoLeft
-            src="https://i0.wp.com/greenenterprise.group/wp-content/uploads/2022/10/GE_Rectangular_Black.png?fit=1024%2C399&ssl=1"
+            src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil et quas molestiae voluptatem blanditiis est quisquam. Esse, saepe sit."
           />
         </motion.div>
