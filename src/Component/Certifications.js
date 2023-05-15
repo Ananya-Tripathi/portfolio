@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { EmblaCarousel } from "./EmblaCarousel";
 
 const Certifications = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +10,6 @@ const Certifications = () => {
       <button className="subHeading" onClick={handleClick}>
         Certifications
       </button>
-      {open && <EmblaCarousel />}
     </div>
   );
 };

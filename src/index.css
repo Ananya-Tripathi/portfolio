@@ -36,10 +36,10 @@ a {
 
 .subText {
   font-family: "Sono", sans-serif;
-  @apply text-center;
+  @apply text-center ;
 }
 .subHeading {
-  @apply text-2xl pt-6 w-[200px] mx-auto border-b-2 pb-2 mb-4;
+  @apply text-2xl pt-6 w-[200px] mx-auto border-b-2 pb-2 mb-4 font-bold;
 }
 
 .embla {
