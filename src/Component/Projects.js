@@ -2,7 +2,9 @@ import React from "react";
 import Info from "./Info.js";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+import weblog from "../assests/WeBlog.png";
+import taskflex from "../assests/taskflex.png";
+import campusPost from "../assests/campusPost.png";
 const Projects = () => {
   const [open, setOpen] = useState(false);
   function handleClick() {
@@ -18,14 +20,13 @@ const Projects = () => {
         <motion.div
           initial={{ top: -50, opacity: 0 }}
           animate={{ top: 0, opacity: 1 }}
+          exit={{ top: -50 }}
           transition={{ duration: 0.4 }}
-          className="relative top-0"
+          className="relative top-0 flex flex-wrap w-[80%] h-[60%] mx-auto overflow-scroll "
         >
-          <Info
-            src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
-            heading="WeBlog (React, Node.js, Express, MongoDB, Javascript, HTML5, CSS)"
-            description="A recipe blogging website, with integrated user-authentication,user can create and edit post from their id."
-          />
+          <Info src={weblog} heading="WeBlog" />
+          <Info src={taskflex} heading="Task Flex" />
+          <Info src={campusPost} heading="Campus Post" />
         </motion.div>
       )}
     </div>

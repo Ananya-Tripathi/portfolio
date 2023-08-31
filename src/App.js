@@ -5,15 +5,16 @@ import { useState, useEffect } from "react";
 import { PropagateLoader } from "react-spinners";
 import Experience from "./Component/Experience";
 import Projects from "./Component/Projects";
-import Certifications from "./Component/Certifications";
+import Skills from "./Component/Skills";
+
 function App() {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      console.log(loading);
-    }, 4000);
+      // console.log(loading);
+    }, 1000);
   }, []);
   return (
     <div>
@@ -28,7 +29,8 @@ function App() {
           <About />
           <Experience />
           <Projects />
-          <Certifications />
+          {/* <Certifications /> */}
+          <Skills />
           <Contact />
           <Footer />
         </div>

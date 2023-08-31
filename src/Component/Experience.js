@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Info from "./Info";
 import { motion } from "framer-motion";
+import opus from "../assests/Opus.png";
 const Experience = () => {
   const [open, setOpen] = useState(false);
   function handleClick() {
@@ -16,13 +17,13 @@ const Experience = () => {
           initial={{ top: -50, opacity: 0 }}
           animate={{ top: 0, opacity: 1 }}
           exit={{ top: -50 }}
-          transition={{ duration: 0.4 }}
-          className="relative top-0"
+          transition={{ duration: 0.7 }}
+          className="relative top-0 flex flex-wrap w-[80%] h-[60%] mx-auto overflow-scroll "
         >
           <Info
-            src="https://cdn.pixabay.com/photo/2017/05/10/15/05/himalayas-2301040_1280.jpg"
-            heading="Front-End Developer, Green Enterprises"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil et quas molestiae voluptatem blanditiis est quisquam. Esse, saepe sit."
+            src={opus}
+            heading="Front-End Developer"
+            description="Green Enterprises"
           />
         </motion.div>
       )}

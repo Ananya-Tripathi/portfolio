@@ -2,17 +2,17 @@ import React from "react";
 
 const Info = (props) => {
   return (
-    <div className="container md:flex md:w-[800px] gap-x-10 mt-6">
-      <div className="  p-2 md:border-r-4 border-white">
+    <div className="container md:w-[35vw] md:h-[45vh] relative mx-auto my-6">
+      <div className="h-[85%] w-full rounded-md overflow-hidden">
         <img
           src={props.src}
           alt="logo"
-          className="mx-auto h-32 p-4 bg-slate-100 rounded-md "
+          className="h-full w-full object-cover"
         />
       </div>
-      <div className="md:text-left px-4 py-2 w-3/4 mx-auto">
-      <p className="font-semibold ">{props.heading}</p>
-        <p>{props.description}</p>
+      <div className="h-[15%] bg-black bg-opacity-50 text-white py-2 px-4">
+        <p className="font-semibold text-xl text-ellipsis">{props.heading}</p>
+        {/* <p className="mt-1">{props.description}</p> */}
       </div>
     </div>
   );
