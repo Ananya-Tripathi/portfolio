@@ -18,7 +18,7 @@ const Experience = () => {
           animate={{ top: 0, opacity: 1 }}
           exit={{ top: -50 }}
           transition={{ duration: 0.7 }}
-          className="relative top-0 flex flex-wrap w-[80%] h-[60%] mx-auto overflow-scroll "
+          className="relative top-0 flex flex-wrap w-[80%] h-[60%] mx-auto overflow-scroll"
         >
           <Info
             src={opus}

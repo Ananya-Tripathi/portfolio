@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  FaLaptopCode,
-  FaCode,
-  FaServer,
+  FaNodeJs,
+  FaPython,
+  FaJava,
   FaDatabase,
-  FaLanguage,
 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
 import {
   SiTailwindcss,
   SiCss3,
   SiHtml5,
   SiReact,
-  SiGit,
+  SiTypescript,
+  SiJavascript,
   SiGithub,
   SiVisualstudiocode,
+  SiMongodb,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -37,23 +37,47 @@ const Skills = () => {
           animate={{ top: 0, opacity: 1 }}
           exit={{ top: -50 }}
           transition={{ duration: 0.4 }}
-          className="relative top-0 flex flex-wrap w-[80%] h-[60%] mx-auto overflow-scroll "
+          className=" top-0 w-[80%] h-[60%] mx-auto overflow-scroll gap-x-4 flex flex-wrap justify-center items-center"
         >
-          <div className="flex w-[80%]">
-            <div className="w-[20%]">Frontend development</div>
-            <div className="w-[80%] flex flex-row"></div>
+          <div className="icon">
+            <SiHtml5 className="iconn" /> HTML5
           </div>
-          <div className="flex w-[80%]">
-            <div className="w-[20%]">Backend development</div>
-            <div className="w-[80%] flex flex-row"></div>
+          <div className="icon">
+            <SiCss3 className="iconn" /> CSS
           </div>
-          <div className="flex w-[80%]">
-            <div className="w-[20%]"></div>
-            <div className="w-[80%] flex flex-row"></div>
+          
+          <div className="icon">
+            <SiTailwindcss className="iconn" /> TailwindCss
           </div>
-          <div className="flex w-[80%]">
-            <div className="w-[20%]"></div>
-            <div className="w-[80%] flex flex-row"></div>
+          <div className="icon">
+            <SiJavascript className="iconn" /> JavaScript
+          </div>
+          <div className="icon">
+            <SiTypescript className="iconn" /> TypeScript
+          </div>
+          <div className="icon">
+            <SiReact className="iconn" /> React
+          </div>
+          <div className="icon">
+            <SiMongodb className="iconn" /> MongoDB
+          </div>
+          <div className="icon">
+            <FaDatabase className="iconn" /> MySQL
+          </div>
+          <div className="icon">
+            <SiGithub className="iconn" /> GitHub
+          </div>
+          <div className="icon">
+            <SiVisualstudiocode className="iconn" /> VSCode
+          </div>
+          <div className="icon">
+            <FaPython className="iconn" /> Python
+          </div>
+          <div className="icon">
+            <FaJava className="iconn" /> Java
+          </div>
+          <div className="icon">
+            <FaNodeJs className="iconn" /> NodeJs
           </div>
         </motion.div>
       )}

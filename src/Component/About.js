@@ -8,29 +8,30 @@ export const About = () => {
         initial={{ top: -100, opacity: 0 }}
         animate={{ top: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl lg:text-6xl font-extrabold py-6 relative top-0 border-b-2 mb-6"
+        className="text-3xl md:text-4xl lg:text-6xl font-extrabold py-6 relative top-0 border-b-2 mb-6 "
       >
-        Hi I am Ananya,
+        ANANYA TRIPATHI
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ x: 1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.3 }}
         className="text-base md:text-xl subText py-4 relative right-0"
       >
-        Welcome to my profile...
-      </motion.div>
+        
+      </motion.div> */}
       <motion.div
         initial={{ x: -1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.3 }}
         className="text-base md:text-base subText relative left-0"
       >
-        I am an aspiring Full-Stack developer currently learning Back-End and
-        polishing my Front-End skills. I have previously worked with React,
-        Javascript, HTML and CSS. Currently learning to work with Node,
-        Express.js
+      
+    Experienced full-stack developer with a passion for building innovative web applications.
+    Proficient in React.js, Node.js, Express, MongoDB, MySQL, Python, Java, and C++.
+    Highly skilled problem-solver and team player.
+
       </motion.div>
     </div>
   );

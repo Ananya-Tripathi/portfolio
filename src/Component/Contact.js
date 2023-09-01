@@ -2,10 +2,10 @@ import React from "react";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail, SiGithub } from "react-icons/si";
-
+import {motion} from 'framer-motion'
 export const Contact = () => {
   return (
-    <div className="subText mx-auto  pt-10 mt-32">
+    <motion.div className="subText mx-auto  pt-10 mt-32">
       <h1 className="subHeading">Let's Connect</h1>
       <div className="text-xl h-20 flex space-x-4 justify-center p-4">
         <a href="mailto:ananyatrip0802@gmail.com">
@@ -21,6 +21,6 @@ export const Contact = () => {
           <FiInstagram />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };

@@ -22,10 +22,10 @@ body {
   color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-family: "Poppins", sans-serif;
 }
+
 a {
   @apply transition-all ease-in-out hover:text-2xl hover:cursor-pointer;
 }
@@ -35,7 +35,7 @@ a {
 }
 
 .subText {
-  font-family: "Sono", sans-serif;
+  font-family: "Arial", sans-serif;
   @apply text-center;
 }
 .subHeading {
@@ -43,4 +43,13 @@ a {
 }
 .emSlide {
   @apply flex-[0_0_80%];
+}
+.info {
+  @apply container md:w-[35vw] md:h-[45vh] relative mx-auto my-6 hover:cursor-pointer;
+}
+.icon {
+  @apply m-2 w-24 h-16 p-2 content-center;
+}
+.iconn {
+  @apply text-3xl mx-auto;
 }
