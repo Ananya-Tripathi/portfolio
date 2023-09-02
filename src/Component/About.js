@@ -3,7 +3,7 @@ import React from "react";
 // import avtar from "./EducationSection/avatar.png";
 export const About = () => {
   return (
-    <div className="text-center p-6 h-[400px] mt-32 mb-20 md:w-[700px] mx-auto ">
+    <div className="text-center p-6 h-[300px] mt-32 mb-20 md:w-[700px] mx-auto ">
       <motion.div
         initial={{ top: -100, opacity: 0 }}
         animate={{ top: 0, opacity: 1 }}
@@ -12,15 +12,6 @@ export const About = () => {
       >
         ANANYA TRIPATHI
       </motion.div>
-
-      {/* <motion.div
-        initial={{ x: 1000, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.3 }}
-        className="text-base md:text-xl subText py-4 relative right-0"
-      >
-        
-      </motion.div> */}
       <motion.div
         initial={{ x: -1000, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

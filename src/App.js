@@ -14,7 +14,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
       // console.log(loading);
-    }, 1000);
+    }, 1);
   }, []);
   return (
     <div>
@@ -29,8 +29,12 @@ function App() {
           <About />
           <Experience />
           <Projects />
-          {/* <Certifications /> */}
           <Skills />
+          <a href="https://drive.google.com/file/d/1QjDAfqWi-7t7b7cVfTttclC03b5iTM39/view?usp=sharing">
+            <p className="transition-all ease-in-out hover:cursor-pointer text-xl w-[200px] hover:w-[250px] mx-auto border-b-2 my-20 hover:font-bold font-semibold text-center border-2 py-auto ">
+              RESUME
+            </p>
+          </a>
           <Contact />
           <Footer />
         </div>

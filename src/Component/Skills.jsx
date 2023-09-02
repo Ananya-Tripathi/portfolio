@@ -37,7 +37,7 @@ const Skills = () => {
           animate={{ top: 0, opacity: 1 }}
           exit={{ top: -50 }}
           transition={{ duration: 0.4 }}
-          className=" top-0 w-[80%] h-[60%] mx-auto overflow-scroll gap-x-4 flex flex-wrap justify-center items-center"
+          className=" top-0 w-[80%] h-[210px] mx-auto overflow-scroll gap-x-4 flex flex-wrap justify-center items-center p-6"
         >
           <div className="icon">
             <SiHtml5 className="iconn" /> HTML5

@@ -24,6 +24,9 @@ const Experience = () => {
             src={opus}
             heading="Front-End Developer"
             description="Green Enterprises"
+            l1="Created Erorr 404 Page"
+            l2="User search page using Opus API"
+            l3="Code debugging and understanding VCS"
           />
         </motion.div>
       )}

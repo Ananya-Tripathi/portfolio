@@ -17,9 +17,11 @@ const Info = (props) => {
         >
           <h1 className="text-2xl font-bold underline p-2">{props.heading}</h1>
           <div className="text-left p-4 overflow-scroll">
-            <p className="text-lg">{props.l1}</p>
-            <p className="text-lg">{props.l2}</p>
-            <p className="text-lg">{props.l3}</p>
+            <ul className="list-disc">
+              <li>{props.l1}</li>
+              <li>{props.l2}</li>
+              <li>{props.l3}</li>
+            </ul>
           </div>
         </motion.div>
       ) : (

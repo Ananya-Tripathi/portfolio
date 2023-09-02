@@ -28,8 +28,9 @@ const Projects = () => {
           <Info
             src={weblog}
             heading="WeBlog"
-            l1="User authentication using JWT token"
-            l2="Create, read, update and delete post"
+            l1="User registration and login"
+            l2="User authentication using JWT token"
+            l3="Create, read, update and delete post"
           />
 
           <Info
@@ -39,7 +40,13 @@ const Projects = () => {
             l2="Create teams, add and delete members"
             l3="Assign task to members"
           />
-          <Info src={campusPost} heading="Campus Post" />
+          <Info
+            src={campusPost}
+            heading="Campus Post"
+            l1="User Registration and Login"
+            l2="Learn about clubs events"
+            l3="Stay updated with college events"
+          />
         </motion.div>
       )}
     </div>
