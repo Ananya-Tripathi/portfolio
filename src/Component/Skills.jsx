@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  FaNodeJs,
-  FaPython,
-  FaJava,
-  FaDatabase,
-} from "react-icons/fa";
+import { FaNodeJs, FaPython, FaJava, FaDatabase } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiCss3,
@@ -37,7 +32,7 @@ const Skills = () => {
           animate={{ top: 0, opacity: 1 }}
           exit={{ top: -50 }}
           transition={{ duration: 0.4 }}
-          className=" top-0 w-[80%] h-[210px] mx-auto overflow-scroll gap-x-4 flex flex-wrap justify-center items-center p-6"
+          className=" top-0 w-[80%] h-[210px] mx-auto overflow-hidden gap-x-4 flex flex-wrap justify-center items-center p-6"
         >
           <div className="icon">
             <SiHtml5 className="iconn" /> HTML5
@@ -45,7 +40,7 @@ const Skills = () => {
           <div className="icon">
             <SiCss3 className="iconn" /> CSS
           </div>
-          
+
           <div className="icon">
             <SiTailwindcss className="iconn" /> TailwindCss
           </div>

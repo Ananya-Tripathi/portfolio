@@ -16,7 +16,7 @@ const Info = (props) => {
           className="info p-4"
         >
           <h1 className="text-2xl font-bold underline p-2">{props.heading}</h1>
-          <div className="text-left p-4 overflow-scroll">
+          <div className="text-left p-4 overflow-hidden">
             <ul className="list-disc">
               <li>{props.l1}</li>
               <li>{props.l2}</li>
