@@ -30,7 +30,7 @@ function App() {
           <Experience />
           <Projects />
           <Skills />
-          <a href="https://drive.google.com/file/d/1Sy0FeLGzWnczzY4Es8o5P4UGL5rDOBKZ/view?usp=drivesdk">
+          <a href="https://drive.google.com/file/d/1Cyt-i8m6o5wPYmYdNw_Y4rJNu97sbg-5/view?usp=sharing">
             <p className="transition-all ease-in-out hover:cursor-pointer text-xl w-[200px] hover:w-[250px] mx-auto border-b-2 my-20 hover:font-bold font-semibold text-center border-2 py-auto ">
               RESUME
             </p>
